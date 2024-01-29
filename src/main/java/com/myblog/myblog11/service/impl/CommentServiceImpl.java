@@ -21,7 +21,7 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public CommentDto createComment(CommentDto commentDto, Long postId) {
+    public CommentDto createComment(CommentDto commentDto, long postId) {
         Post post = postRepository.findById(postId).orElseThrow(
                 () -> new ResourceNotFoundException("Post not found with id:" + postId)
         );

@@ -22,7 +22,5 @@ public class Comment {
         @ManyToOne
         @JoinColumn(name = "post_id")
         private Post post;
-
-        // other fields, getters, setters, etc.
     }
 
